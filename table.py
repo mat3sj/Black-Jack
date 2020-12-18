@@ -22,7 +22,7 @@ class Deck(object):
         suits = ['Hearts', 'Diamonds', 'Spades', 'Clubs']
         ranks = ['A', 2, 3, 4, 5, 6, 7, 8, 9, 10, 'J', 'Q', 'K']
         self.deck = []
-        for _ in range (number_of_decks)
+        for _ in range (number_of_decks):
             for suit in suits:
                 for rank in ranks:
                     self.deck.append(Card(suit, rank))
@@ -36,6 +36,7 @@ class Hand(object):
         self.cards = []
         self.active = True
         self.value = 0
+        self.black_jack = False
 
 class Player(object):
     def __init__(self, wallet, name='Dealer'):
